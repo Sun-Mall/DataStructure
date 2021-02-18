@@ -1,5 +1,8 @@
 package com.datastructure;
 
+import com.datastructure.utils.ArrayGenerator;
+import com.datastructure.utils.SortingHelper;
+
 /**
  * 选择排序
  *
@@ -63,10 +66,12 @@ public class SelectionSort {
     }
 
     public static void main(String[] args) {
-        Integer[] arr = {5, 1, 3, 6, 4, 2};
+        /*Integer[] arr = {5, 1, 3, 6, 4, 2};
         sort(arr);
         for (int e : arr) {
             System.out.println(e);
-        }
+        }*/
+        Integer[] arr = ArrayGenerator.generateRandomArray(10000,100000);
+        SortingHelper.sortTest("SelectionSort",arr);
     }
 }
