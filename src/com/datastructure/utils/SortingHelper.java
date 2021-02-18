@@ -1,4 +1,4 @@
-package com.datastructure;
+package com.datastructure.utils;
 
 /**
  * TODO:Description
