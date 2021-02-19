@@ -1,4 +1,4 @@
-package com.datastructure;
+package com.datastructure.sort;
 
 import com.datastructure.utils.ArrayGenerator;
 import com.datastructure.utils.SortingHelper;

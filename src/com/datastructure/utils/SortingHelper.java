@@ -1,7 +1,8 @@
 package com.datastructure.utils;
 
-import com.datastructure.InsertionSort;
-import com.datastructure.SelectionSort;
+import com.datastructure.sort.InsertionSort;
+import com.datastructure.sort.MergeSort;
+import com.datastructure.sort.SelectionSort;
 
 /**
  * TODO:Description
@@ -28,11 +29,14 @@ public class SortingHelper {
         if (sortName == "InsertionSort") {
             InsertionSort.newSort(arr);
         }
+        if (sortName == "MergeSort") {
+            MergeSort.sort(arr);
+        }
         long endTime = System.nanoTime();
-        double time = (endTime-startTime)/1000000000.0;
-        if (!SortingHelper.isSorted(arr)){
+        double time = (endTime - startTime) / 1000000000.0;
+        if (!SortingHelper.isSorted(arr)) {
             throw new RuntimeException("Sort failed");
         }
-        System.out.println(sortName+" n="+arr.length+" : "+time+"s");
+        System.out.println(sortName + " n=" + arr.length + " : " + time + "s");
     }
 }
